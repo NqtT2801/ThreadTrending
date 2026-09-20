@@ -1,0 +1,2 @@
+[0:a]adelay=500:all=1[s0];
+[1:a][s0]amix=inputs=2:normalize=0:dropout_transition=0[vo]

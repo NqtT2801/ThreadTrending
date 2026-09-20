@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# secrets
+.env
+.streamlit/secrets.toml
+*service-account*.json
+
+# runtime state
+data/
+cache/
+output/
+assets/music/*
+assets/sfx/*
+assets/backgrounds/*
+!assets/**/.gitkeep
+
+# bundled fonts are committed; everything else in assets is local

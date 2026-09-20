@@ -1,0 +1,14 @@
+[server]
+# Watch source modules so edits reload, but never the runtime directories --
+# Playwright, ffmpeg and the caches all write there constantly and a restart
+# mid-render would drop the browser the render is using.
+fileWatcherType = "auto"
+folderWatchBlacklist = ["data", "cache", "output", ".venv"]
+maxUploadSize = 50
+
+[theme]
+base = "dark"
+primaryColor = "#FF4D4D"
+
+[browser]
+gatherUsageStats = false
